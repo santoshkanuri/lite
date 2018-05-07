@@ -61,6 +61,14 @@ app.get('/about',(req,res)=>{
   });
 });
 
+
+//Portfolio
+app.get('/portfolio',(req,res)=>{
+  res.render('portfolio.hbs',{
+    pageTitle:'Portfolio',
+  //  currentYear: new Date().getFullYear()
+  });
+});
 //bad req
 app.get('/bad',(req,res)=>{
   var errorMsg1 ={
